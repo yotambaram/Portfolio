@@ -1,12 +1,23 @@
-html, body{
-    height: 100%;
-    background-color: rgb(236, 236, 236);
+html {
+    min-height: 100%;
+  }
+  
+  body {
+    min-height: 100vh;
   }
 
+  header{
+      
+      
+  }
 
 .container {
-    height: 90%;
+    min-height: 100%;
+    margin-top: 6%;
+    
+    
     background-color: white;
+  
     
 }
 
@@ -20,14 +31,27 @@ html, body{
 }
 
 #id-holder{
-    height: 30%;
+    height: 4rem;
     margin-top: 3%;
     background-color: rgb(150, 84, 84);
     
 }
 
+
+#home-profile-pic{
+    margin: 4rem;
+    max-width: 20rem;
+}
+
+#home-id-card-style{
+    height: 30%;
+    margin-top: 3%;
+    background-color: rgb(150, 84, 84);
+}
+
 #all-content-holder{
     height: 100%;
+    background-color: rgb(150, 84, 84);
 
 }
 #all-content-holder{
@@ -39,6 +63,7 @@ html, body{
     height: 100%;
     display: flex;
     align-items: center;
+    
 }
 
 #contant-style{
@@ -70,7 +95,11 @@ html, body{
 
 
 #id-card {
-    margin: 3rem 0.5rem;
+    
+    margin: 1rem 0.5rem;
+    width: 90%;
+    height: 100%;
+    
     
 }
 
@@ -78,19 +107,22 @@ html, body{
 
 
 #project-one{
-    margin-top: 3rem;
+    margin-top: 1rem;
+    width: 90%;
 }
 
 .contant-one{
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 
 #project-two{
     margin-top: -8rem;
+    width: 90%;
 }
 
 #project-three{
+    width: 90%;
 
 }
 
@@ -103,13 +135,15 @@ html, body{
 
 @media (max-width: 720px) {
     #id-card {
-        margin: 1rem auto;
+        margin: 4rem auto;
         width: 95%;
+        
         
     }
 
     #project-one{
         margin-top: 1rem;
+        height: 100%;
     }
 
     #id-card-holder{
@@ -119,13 +153,21 @@ html, body{
     .extra-cantant{
         display: none;
     }
+    #home-profile-pic{
+        width: 60%;
+        margin: 4rem auto;
+    }
 
 
 
 }
 
 
-
+#home-cover-color{
+    height: 13rem;
+    background-color: rgb(150, 84, 84);
+    width: 100%;
+}
 
 
 .full-width{
@@ -138,6 +180,24 @@ html, body{
 }
 
 .backgraund-test{
+    background-color: rgb(204, 39, 39);
+
+}
+
+.gen-red{
     background-color: rgb(150, 84, 84);
 
+}
+#home-contant{
+    min-height: 100vh;
+    padding: 15% 0 0 6%;
+    
+    
+}
+
+
+
+#home-place-holder{
+    height: 13rem;
+    
 }
