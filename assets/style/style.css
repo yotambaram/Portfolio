@@ -4,36 +4,25 @@ html {
   
   body {
     min-height: 100vh;
+    background-color:rgb(255, 251, 251);
   }
 
-  header{
-      
-      
-  }
 
 .container {
     min-height: 100%;
     margin-top: 6%;
-    
-    
     background-color: white;
-  
-    
+   
 }
 
   
 
 
-#under-nav {
-  
-    background-color: rgb(113, 113, 190);
-    height: 200px;
-}
 
 #id-holder{
     height: 4rem;
     margin-top: 3%;
-    background-color: rgb(150, 84, 84);
+    background-color: rgb(170, 170, 170);
     
 }
 
@@ -46,12 +35,12 @@ html {
 #home-id-card-style{
     height: 30%;
     margin-top: 3%;
-    background-color: rgb(150, 84, 84);
+    background-color: rgb(170, 170, 170);
 }
 
 #all-content-holder{
     height: 100%;
-    background-color: rgb(150, 84, 84);
+    background-color: rgb(170, 170, 170);
 
 }
 #all-content-holder{
@@ -148,6 +137,7 @@ html {
 
     #id-card-holder{
         margin: 1rem auto;
+        
     }
 
     .extra-cantant{
@@ -165,7 +155,7 @@ html {
 
 #home-cover-color{
     height: 13rem;
-    background-color: rgb(150, 84, 84);
+    background-color: rgb(170, 170, 170);
     width: 100%;
 }
 
@@ -185,7 +175,7 @@ html {
 }
 
 .gen-red{
-    background-color: rgb(150, 84, 84);
+    background-color: rgb(170, 170, 170);
 
 }
 #home-contant{
@@ -200,4 +190,13 @@ html {
 #home-place-holder{
     height: 13rem;
     
+}
+
+
+#submit-btn{
+    background-color: rgb(170, 170, 170);
+}
+
+.bold-text{
+    font-weight: 600
 }
