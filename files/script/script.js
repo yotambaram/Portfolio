@@ -3,42 +3,81 @@
 //put the jquert script ar html
 //conect this script
 
-
-portfolioBtn = $('portfolioBtn')
-aboutMes = $('#aboutMe')
-contactBtn = $('#contactBtn')
+//portfolioBtn = $('portfolioBtn')
+//portfolioBtn = $('portfolioBtn')
+//aboutMes = $('#aboutMe')
+//contactBtn = $('#contactBtn')
 
 $(document).ready(function(){
 
-    $('#portfolioBtn').click(function(){
-        
-        $('#about-me-holder').hide()
-        $('#form-holder').hide()
-        $('.port-card').show()
-        $('#head-line-content').text('PROJECTS')
-        
-        
 
-     })
-     
-     
-     $('#aboutMe').click(function(){
-        $('#about-me-holder').show()
-        $('#form-holder').hide()
-        $('.port-card').hide()
-        $('#head-line-content').text('ABOUT ME')
-        $('#form-holder').append()
-        //$('.port-card').show()
+  $('#homeBtn').click(function(){
+    $('#home').show()
+    $('#content').hide()
+   $('#head-line-content').text('PROJECTS')
+   //const btn = '#homeBtn'
+   ChangeBtnActivity('#homeBtn')
+ })
 
-      })
-     
-      
-      $('#contactBtn').click(function(){
-        $('#form-holder').show()
-        $('#about-me-holder').hide()
-        $('.port-card').hide()
-        $('#head-line-content').text('CONTACT ME')
-      })
+ $('#portfolioBtn').click(function(){
+  $('#content').show()
+  $('#home').hide()
+  $('#about-me-holder').hide()
+  $('#form-holder').hide()
+  $('.port-card').show()
+  $('#head-line-content').text('PROJECTS')
+   //const btn = '#portfolioBtn'
+   ChangeBtnActivity('#portfolioBtn')
+})
+
+
+$('#aboutMe').click(function(){
+ $('#content').show()
+ $('#home').hide()
+ $('#about-me-holder').show()
+  $('#form-holder').hide()
+  $('.port-card').hide()
+  $('#head-line-content').text('ABOUT ME')
+  $('#form-holder').append()
+ //const btn = '#portfolioBtn'
+ ChangeBtnActivity('#aboutMe')
+
+})
+
+
+$('#contactBtn').click(function(){
+  $('#content').show()
+  $('#home').hide()
+  $('#form-holder').show()
+  $('#about-me-holder').hide()
+  $('.port-card').hide()
+  $('#head-line-content').text('CONTACT ME')
+  //const btn = '#contactBtn'
+ ChangeBtnActivity('#contactBtn')
+})
+
+
+
+
+
+
+function ChangeBtnActivity(pressedBtn){
+  const BtnArr = ['#homeBtn', '#portfolioBtn', '#aboutMe', '#contactBtn']
+  for (let i = 0; i < BtnArr.length; i++) {
+    const button = BtnArr[i];
+    if(button === pressedBtn){
+      $(button).addClass('active')
+      console.log("tttt")
+    } else  {
+      $(button).removeClass('active')
+      console.log("tttt2")
+    }
+  }
+}
+
+
+
+   
 
 })
 

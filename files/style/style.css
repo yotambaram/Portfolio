@@ -59,18 +59,12 @@ html {
 
 #contant-style{
     border: 1px black;
-    height: 100%;
-    
+    height: 100%; 
 
 }
 
 #profile-pic{
     margin: 33% auto;
-    
-    
-    
-    
-    
 }
 
 
@@ -93,23 +87,8 @@ html {
 
 
 
-#project-one{
-   
-}
-
 .contant-one{
     margin-top: 1rem;
-}
-
-
-#project-two{
-    
-   
-}
-
-#project-three{
-   
-
 }
 
 
@@ -218,20 +197,13 @@ html {
     font-weight: 600
 }
 
-#id-card-holder{
-   
-    
-  
-    
-    
-}
 
 
 #id-card {
     position: fixed;
     margin: 1rem 0.5rem;
     width: 13%;
-    height: 70%;
+    height: 35rem;
     
     
 }
@@ -252,7 +224,7 @@ html {
 #right-card-two{
     margin-top: 18rem;
     position: fixed;
-    height: 16rem;
+    height: 18rem;
     width: 8%;
 }
 

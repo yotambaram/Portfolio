@@ -1,66 +1,276 @@
 <!DOCTYPE html>
 <html lang='en'>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yotam Baram - Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel='stylesheet' href='./files/style/style.css'>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./files/script/script.js"></script>
-  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yotam Baram - Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel='stylesheet' href='./files/style/style.css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./files/script/script.js"></script>
 </head>
 
 <body>
-  <header >
+  <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class='navbar-nav' id='navbar-nav'>
-          <a  class="nav-item nav-link" href="index.html" id = 'homeBtn'>HOME<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link active" href="contant.html" id ='portfolioBtn'>PROJECTS</a>
-          <a class="nav-item nav-link" href="contant.html" id = 'aboutMe'>ABOUT ME</a>
-          <a class="nav-item nav-link" href="contant.html" id = 'contactBtn'>CONACT ME</a>
+          <a class="nav-item nav-link" href="#" id='homeBtn'>HOME<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#" id='portfolioBtn'>PROJECTS</a>
+          <a class="nav-item nav-link" href="#" id='aboutMe'>ABOUT ME</a>
+          <a class="nav-item nav-link" href="#" id='contactBtn'>CONACT ME</a>
         </div>
       </div>
     </nav>
   </header>
-  
-  
-  <div class='container border-dark mb-3 shadow mb-1 bg-white rounded img-thumbnail' id='home-container'>
-    <div class='row'>
-      <div class='col-12 col-md-12 border-dark backgraund-test' id = 'home-cover-color'>
-          <img src = './files/jpg/yotam2.jpg' alt = "profile picture" id='home-profile-pic' class='img-thumbnail position-absolute'>
-      </div>
-    </div>
-    <div class='row'>
-      <div class = 'col-12 col-md-12' id = 'home-place-holder'>
-      </div>
-    </div>
-      <div class='row'>
-        <div class = ' col-12 col-md-12 border-dark' id = 'home-contant'>
-         <div><h1>Yotam Baram</h1></div>
-         <div><h1>Front End Developer</h1></div>
+
+  <div class='container border-dark mb-3 shadow mb-5 bg-white rounded'>
+    <div id="content" style="display: none;">
+      <div class="row">
+        <div class="col-12 col-md-3 border-dark" id="id-card-holder">
+          <div class='card border-dark mb-3 shadow mb-5 bg-white rounded img-thumbnail' id='id-card'>
+            <div class='card-header border-dark gen-red bold-text text-center'>Yotam Baram</div>
+            <img src="./files/jpg/yotam2.jpg" class='card-img-top border' alt='profile picture' id="">
+            <div class="card-body">
+              <div class="card-text">
+                <p>Yotam Baram</p>
+                <p>Full Stack Developer</p>
+                <p>4-5 words on me</p>
+                <p>fix card size after react</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-7 border-dark" id='head-line'>
+          <div class="card mb-3 card border-dark mb-3 shadow mb-5 bg-white rounded img-thumbnail">
+            <div class="card-body">
+              <h3 class="card-title" id="head-line-content">PROJECTS</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-2 border-dark contant-one">
+          <div class="row">
+            <div class="col-12 col-md-12 border-dark">
+              <div class='card border-dark mb-3 shadow mb-5 bg-white rounded extra-cantant img-thumbnail'
+                id='right-card-one'>
+                <img src="http://via.placeholder.com/70" class='card-img-top border' alt='picture'>
+                <div class="card-body">
+                  <p class="card-text">Expensive advertising space</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 border-dark">
+              <div class='card border-dark mb-3 shadow mb-5 bg-white rounded extra-cantant img-thumbnail'
+                id='right-card-two'>
+                <img src="http://via.placeholder.com/50" class='card-img-top border' alt='picture'>
+                <div class="card-body">
+                  <p class="card-text">Less expensive advertising space</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    
+      <div class="row">
+        <div class="col-12 col-md-3 border-dark" id="id-card-holder">
+        </div>
+        <div class="col-12 col-md-7 border-dark port-card" id='project-one'>
+          <div class="card mb-3 card border-dark mb-3 shadow mb-5 bg-white rounded img-thumbnail">
+            <a href="https://flixlists.herokuapp.com/movies" target="_blank" title="project on">
+              <img src="./files/jpg/flixlists.JPG" class="full-width border" alt="flixlists picture">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Flixlists</h5>
+              <p class="card-text">full stack web application that allows users to search the Open Movie Database for
+                information about films and to keep lists of their favorite ones. Each user his her own login and
+                password and her lists are stored persistently in a MySql database.</p>
+              <p class="card-text"><small class="text-muted"><a href="https://flixlists.herokuapp.com/movies"
+                    target="_blank title" project one>flixlists website </a><a
+                    href="https://github.com/yotambaram/Flixlists" target="_blank title" project one> | flixlists
+                    Github</a></small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-2 border-dark contant-one">
+          <div class="row">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-3 border-dark" id="id-card-holder">
+        </div>
+        <div class="col-12 col-md-7 border-dark port-card" id='project-one'>
+          <div class="card mb-3 card border-dark mb-3 shadow mb-5 bg-white rounded img-thumbnail">
+            <a href="https://yotambaram.github.io/Weather-Dashboard" target="_blank" title="project on">
+              <img src="./files/jpg/weather-deshboard.JPG" class="full-width border" alt="project one picture">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Weather Dashboard</h5>
+              <p class="card-text">Weather Dashboard Weather Dashboard Weather Dashboard Weather Dashboard Weather
+                Dashboard Weather Dashboard.</p>
+              <p class="card-text"><small class="text-muted"><a href="https://yotambaram.github.io/Weather-Dashboard"
+                    target="_blank title=" project two>| Weather Dashboard Githab|</a></small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-2 border-dark contant-one">
+          <div class="row">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-3 border-dark"></div>
+        <div class="col-12 col-md-7 border-dark port-card" id='project-two'>
+          <div class="card mb-3 card border-dark mb-3 shadow mb-5 bg-white rounded img-thumbnail">
+            <a href="https://yotambaram.github.io/Day-Planner/" target="_blank" title="project two">
+              <img src="./files/jpg/day-planer.JPG" class="full-width border" alt="project two picture">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Day Planner</h5>
+              <p class="card-text">Day Planner Day Planner Day Planner Day Planner Day Planner Day Planner Day
+                PlannerDay
+                Planner Day Planner.</p>
+              <p class="card-text"><small class="text-muted"><a href="https://yotambaram.github.io/Day-Planner/"
+                    target="_blank" title="project two">| Day Planner Githab |</small></a></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-3 border-dark"></div>
+        <div class="col-12 col-md-7 border-dark port-card" id='project-three'>
+          <div class="card mb-3 card border-dark mb-3 shadow mb-5 bg-white rounded img-thumbnail">
+            <a href="https://commiewalker.github.io/Findr/" target="_blank" title="project three">
+              <img src="./files/jpg/finder.JPG" class="full-width border" alt="project three picture">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Findr</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted"><a href="https://commiewalker.github.io/Findr/"
+                    target="_blank" title="project three">| Findr Githab |</a></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-3 border-dark"></div>
+        <div class="col-12 col-md-7 border-dark" id='about-me-holder'>
 
-</div> <!--container -->
+          <div class='card border-dark mb-8 shadow mt-3 bg-white rounded img-thumbnail' style='width: 100%;'>
+            <div class='card-header border-dark gen-red bold-text text-center'>
+              <h3>work experience</h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text">2003-2011 bla bla bla</p>
+              <p class="card-text">cv here (linkedin style)</p>
+              <p class="card-text">cv here (linkedin style)</p>
+
+
+            </div>
+          </div>
+
+          <div class='card border-dark mb-8 shadow mt-3 bg-white rounded img-thumbnail' style='width: 100%;'>
+            <div class='card-header border-dark gen-red bold-text text-center'>
+              <h3>Technical Skills</h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text">* i wrote this page alone</p>
+              <p class="card-text">* I quickly learn how to use other people microwave</p>
+
+            </div>
+          </div>
+
+          <div class='card border-dark mb-8 shadow mt-3 bg-white rounded img-thumbnail' style='width: 100%;'>
+            <div class='card-header border-dark gen-red bold-text text-center'>
+              <h3>something else</h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text">bla bla</p>
+              <p class="card-text">bla bla bla</p>
+
+            </div>
+          </div>
 
 
 
 
+
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-3 border-dark"></div>
+        <div class="col-12 col-md-7 border-dark" id='form-holder'>
+          <div class='card border-dark mb-8 shadow mt-3 bg-white rounded img-thumbnail'>
+            <div class='card-header border-dark gen-red bold-text text-center'>Conect Me</div>
+            <form class="bold-text">
+              <div class="form-group"><br>
+                <a>Coming Soon! Please take a number</a>
+                <label for="formGroupExampleInput">Name</label>
+                <input type="text" class="form-control" placeholder="Enter your full name">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" rows="3" placeholder="Hello"></textarea>
+              </div><br><br>
+              <button type="submit" class="btn btn-secondary" id="submit-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="home">
+      <div class='row'>
+        <div class='col-12 col-md-12 border-dark backgraund-test' id='home-cover-color'>
+          <img src='./files/jpg/yotam2.jpg' alt="profile picture" id='home-profile-pic'
+            class='img-thumbnail position-absolute'>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-12 col-md-12' id='home-place-holder'>
+        </div>
+      </div>
+      <div class='row'>
+        <div class=' col-12 col-md-12 border-dark' id='home-contant'>
+          <div>
+            <h1>Yotam Baram</h1>
+          </div>
+          <div>
+            <h3>Full Stack Developer</h3><br /><br />
+            <p>My name is and i'm from and you will know more after the career services will tell me what can i tell you
+              and what not</p>
+            <p>My main goal here is to put together a collection of clichés but nicely and neatly without writing about
+              a wise man who once told<br /> me that a little bit of text is not good and a lot of it is not good so
+              everything in life is in the middle and I just wanted to fill<br /> in lines here So I wrote a little
+              nonsense to see what was happening.
+            </p>
+            <p>The applicant must grow, but not grow too much because everything in life is in the middle.</p>
+            <p>Thanks to Google translate that I haven't even tested and probably the logical difference between
+              languages has created something special here.<br /> One-time.
+            </p>
+            <p>If you've called here, it's not too late to stop and stop if it's right away.
+              It is advisable to read everything upside down now.<br /> At the end you will find that Paul is still
+              alive.
+            </p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--container -->
 </body>
 
 </html>
-  
-
-
-
-
-
-
